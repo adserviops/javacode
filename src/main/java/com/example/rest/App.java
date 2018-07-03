@@ -51,7 +51,9 @@ public class App {
     private static void runGetRequest() {
 
     	// sample URL
-        String url = "http://129.157.179.180:3000/shield/33/45/red/adserviops";
+      for (int i=0; i<10 ; i++) {
+        
+        String url = "http://129.157.179.180:3000/fighters/45/"+i+"/red/adserviops";
         CloseableHttpResponse response = null;
 
         try {
@@ -71,5 +73,7 @@ public class App {
                 System.out.println(ie);
             }
         }
+      }
+
     }
 }
